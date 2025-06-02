@@ -1,0 +1,1204 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: word-wrap;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eff2f7;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 2.8rem;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #111111;
+    --secondaryColor: #333333;
+    --tertiaryColor: #e5e5e5;
+    --footerColor: #dddddd;
+    --fourthColor: #3D3D3D;
+    --darkColor: #ef342b;
+    --lightColor: #ffffff;
+    --bg01Color: #0f2557;
+    --btnColor: #f15048;
+    --btn1Color: #a0367c;
+    --card1Color: #6892d7;
+    --card2Color: #f15048;
+    --card3Color: #5cb85c;
+    --card4Color: #fb9056;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Montserrat", sans-serif;
+    --ffSecondary: "Open Sans", sans-serif;
+    --ffTertiary: "Roboto", sans-serif;
+}
+
+section {
+    padding: 4rem 0.2rem;
+}
+
+/* all buttons */
+.btn {
+    background-color: var(--btnColor);
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: var(--lightColor);
+    padding: 1.3rem 6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+}
+
+.btn1 {
+    background-color: var(--btn1Color);
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--lightColor);
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn1:hover {
+    background-color: #832664;
+}
+
+.btn2 {
+    background-color: var(--lightColor);
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primaryColor);
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 4px;
+}
+
+/* navBar */
+.nav-item .nav-link {
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+/* heroSection */
+header {
+    background-image: url(./assets/images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heroSection {
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.herodiv {
+    background: linear-gradient(to top, #b23c8a, #306ed5);
+    padding: 40rem 30rem;
+    position: relative;
+    left: -28rem;
+}
+
+.jumbotron {
+    background-color: #0f2557ed;
+    width: 70%;
+    padding: 6rem 16rem 20rem 8rem;
+    position: absolute;
+    top: 8rem;
+}
+
+.jumbotron .lead {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+}
+
+.subHeading {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    color: var(--lightColor);
+    width: 100%;
+}
+
+.display {
+    font-family: var(--ffPrimary);
+    font-size: 6rem;
+    color: var(--lightColor);
+}
+
+.lead {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--lightColor);
+    margin-bottom: 3rem;
+}
+
+.bars {
+    width: 25rem;
+    position: absolute;
+    top: -4rem;
+    left: 10rem;
+}
+
+.smallCard {
+    position: absolute !important;
+    top: 8rem;
+    right: 18rem;
+    background-color: #376DC9e4;
+    padding: 1.5rem;
+}
+
+.smallCard h5 {
+    font-family: var(--ffPrimary);
+    font-size: 2.4rem;
+    color: var(--lightColor);
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.smallCard h2 {
+    font-family: var(--ffPrimary);
+    font-size: 16.8rem;
+    color: var(--lightColor);
+    line-height: 12rem;
+    margin-bottom: 3rem;
+}
+
+.ball {
+    background-color: var(--card2Color);
+    color: var(--card2Color);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 6rem;
+}
+
+
+.heroCardBody {
+    position: absolute;
+    bottom: -19rem;
+    left: 30rem;
+}
+
+.heroCard {
+    background-color: #567cbde4;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.heroCard p {
+    font-size: 1.8rem;
+    font-family: var(--ffTertiary);
+    color: var(--lightColor);
+}
+
+.cardHead i {
+    font-size: 6rem;
+    color: var(--lightColor);
+}
+
+.icon {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+}
+
+/* noCoding Container */
+.noCoding {
+    padding: 8rem 0rem;
+}
+
+.absolutecard h2 {
+    font-family: var(--ffPrimary);
+    font-size: 3.8rem;
+    color: var(--primaryColor);
+}
+
+.absolutecard p {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+}
+
+.bgBody {
+    background-color: #4778CA;
+    padding: 22rem 35rem;
+    margin-left: 18rem;
+    margin-top: 6rem;
+}
+
+.videosample {
+    position: absolute;
+}
+
+/* webDesignCard contaier */
+.webDesign {
+    background: linear-gradient(to right, #b23c8a, #306ed5) !important;
+    padding: 12rem 0rem 18rem 0rem;
+}
+
+.old img {
+    width: 35rem;
+    height: 40rem;
+}
+
+.arrow img {
+    width: 35rem;
+    position: absolute;
+    bottom: 26rem;
+    right: 2rem;
+}
+
+.new img {
+    width: 30rem;
+    position: absolute;
+    bottom: 4rem;
+    right: 11rem;
+}
+
+.webDesignCard h2 {
+    font-family: var(--ffPrimary);
+    font-size: 4.8rem;
+    color: var(--lightColor);
+}
+
+.webDesignCard p {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--tertiaryColor);
+}
+
+/* needandmore container */
+.heading_00 {
+    font-family: var(--ffPrimary);
+    font-size: 4.8rem;
+}
+
+.needCards {
+    width: auto;
+    height: 38rem;
+}
+
+.cardHead_1 {
+    padding: 3rem;
+    background-color: var(--card1Color);
+    width: auto;
+    height: 23rem;
+}
+
+.cardHead_2 {
+    padding: 3rem;
+    background-color: var(--card2Color);
+    width: auto;
+    height: 23rem;
+}
+
+.cardHead_3 {
+    padding: 3rem;
+    background-color: var(--card3Color);
+    width: auto;
+    height: 23rem;
+}
+
+.cardHead_4 {
+    padding: 3rem;
+    background-color: var(--card4Color);
+    width: auto;
+    height: 23rem;
+}
+
+.cardHeading {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+}
+
+.cardBody1 {
+    padding: 4rem 2rem;
+    position: relative;
+    bottom: 12rem;
+    right: 2rem;
+}
+
+.cardBody2 {
+    padding: 4rem 2rem;
+    position: relative;
+    bottom: 12rem;
+    left: 2rem;
+}
+
+.cardText {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+}
+
+.needicons {
+    width: 6rem;
+    margin-left: 4rem;
+}
+
+/* websiteTemplates container */
+.heading_01 {
+    font-family: var(--ffPrimary);
+    font-size: 3.4rem;
+    color: var(--lightColor);
+}
+
+.websiteTemplates {
+    background: linear-gradient(to left, #b23c8a, #306ed5) !important;
+}
+
+.websiteImg2 {
+    position: relative;
+    right: 30rem;
+}
+
+.perfectResult,
+.companies {
+    padding: 8rem 0rem !important;
+}
+
+/* customers container  */
+.customers {
+    background-color: var(--bg01Color);
+}
+
+.mainImgBlock {
+    position: relative;
+}
+
+.manimgBox {
+    width: 36rem;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+    top: -14rem;
+}
+
+.manimgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon img {
+    width: 10rem;
+}
+
+.quotes p {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: var(--lightColor);
+    margin-top: 3rem;
+}
+
+.author h4 {
+    font-family: var(--ffPrimary);
+    color: var(--lightColor);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.author p {
+    font-family: var(--ffSecondary);
+    font-size: 1.4rem;
+    color: var(--lightColor);
+}
+
+.happyCustomer h2 {
+    font-family: var(--ffPrimary);
+    font-size: 3.6rem;
+    color: var(--lightColor);
+}
+
+.happyCustomer p {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    color: var(--lightColor);
+    line-height: 4rem;
+}
+
+/* companies container */
+.companyLogo {
+    width: 13rem;
+}
+
+.heading_03 {
+    font-family: var(--ffPrimary);
+    font-size: 3rem;
+    color: var(--primaryColor);
+}
+
+/* website container */
+.websiteCard p {
+    margin-top: 2rem;
+    color: var(--secondaryColor);
+}
+
+.cardImg img {
+    border-radius: 0.6rem;
+}
+
+.cardImg a {
+    text-decoration: none;
+}
+
+.page_title {
+    color: var(--secondaryColor);
+    font-size: 1.3rem;
+}
+
+.page_title:hover {
+    color: var(--card1Color);
+    font-size: 1.3rem;
+}
+
+.title_card {
+    border: 0.2rem solid var(--primaryColor) !important;
+    padding: 5rem 2rem;
+}
+
+.download_title {
+    font-family: var(--ffSecondary);
+    font-size: 2.8rem;
+}
+
+
+/*  */
+
+.heading_02 {
+    font-family: var(--ffPrimary);
+    font-size: 4.8rem;
+    color: var(--primaryColor);
+}
+
+.card-text {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--lightColor);
+}
+
+.text_02 {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+}
+
+/* footer */
+.heading_04 {
+    font-family: var(--ffPrimary);
+    font-size: 2.6rem;
+    color: var(--primaryColor);
+}
+
+.footerBody {
+    padding: 3rem 18rem;
+}
+
+.bg1 {
+    background-color: var(--secondaryColor);
+}
+
+.bg2 {
+    background-color: var(--fourthColor);
+}
+
+.footer-icons a {
+    font-family: var(--ffTertiary);
+    color: var(--lightColor);
+    padding: 0rem 3rem 0rem 0rem;
+}
+
+.footer-title {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    color: var(--lightColor);
+    text-align: start;
+}
+
+.footer-list-item a {
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    color: var(--footerColor);
+}
+
+.footer-icons-list i {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-unstyled a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.copyrights p {
+    font-family: var(--ffTertiary);
+    font-size: 1.6rem;
+    color: var(--lightColor);
+}
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (width <=576px) {
+    .btn {
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+    }
+
+    .btn1 {
+        background-color: var(--btn1Color);
+        font-family: var(--ffPrimary);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--lightColor);
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn2 {
+        background-color: var(--lightColor);
+        font-family: var(--ffPrimary);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--primaryColor);
+        padding: 1rem 4rem;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .heroCardBody {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 7rem;
+        padding: 0rem 1rem;
+        position: absolute;
+        top: 83rem;
+        left: 1.5rem;
+    }
+
+    .smallCard {
+        display: none !important;
+    }
+
+    .websiteImg2 {
+        position: static !important;
+    }
+
+    .jumbotron {
+        width: 100%;
+        padding: 6rem 2rem 6rem 2rem;
+        position: absolute;
+        top: 8rem;
+    }
+
+    .subHeading {
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    .display {
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bars {
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+    }
+
+    .bgBody {
+        padding: 12rem 15rem;
+    }
+
+    .herodiv {
+        padding: 95rem 43rem;
+        position: relative;
+        /* left: -28rem; */
+    }
+
+    .heroCard {
+        width: 100%;
+    }
+
+    .absolutecard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 8rem 15rem;
+        margin-left: 0rem;
+        margin-top: 10rem;
+    }
+
+    .videosample {
+        height: fit-content;
+        position: absolute;
+        top: 4rem;
+    }
+
+    .webDesign {
+        padding: 15rem 0rem 5rem 0rem;
+    }
+
+    .arrow img {
+        width: 24rem;
+        position: absolute;
+        bottom: 29.4rem;
+        right: 0.3rem;
+    }
+
+    .new img {
+        width: 100%;
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+    }
+
+    .webDesignCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .webDesignCard .btn {
+        font-size: 1.4rem;
+    }
+
+    .needCards {
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .heading_01 {
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .manimgBox {
+        width: 40rem;
+        height: 25rem;
+        position: absolute;
+        top: -9rem;
+        right: 2rem;
+    }
+
+    .quoteBlock {
+        margin-top: 10rem;
+    }
+
+    .author {
+        margin-bottom: 3rem;
+    }
+
+    .heading_03 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .websiteCard p {
+        text-align: center;
+    }
+
+    .heading_04 {
+        font-size: 1.8rem;
+        margin-right: 0.3rem;
+    }
+
+    .footerBody {
+        padding: 3rem 3rem;
+    }
+
+    .footerBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .copyrights {
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+    .smallCard {
+        display: none !important;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 12rem 15rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .websiteImg2 {
+        position: static !important;
+    }
+
+    .herodiv {
+        padding: 85.2rem 25rem;
+        position: relative;
+        left: -5.2rem;
+    }
+
+    .jumbotron {
+        width: 95%;
+        padding: 6rem 1rem 18rem 2rem;
+        position: absolute;
+        top: 6rem;
+    }
+
+    .bars {
+        position: absolute;
+        top: -4rem;
+        left: -1.6rem;
+    }
+
+    .heroCardBody {
+        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0rem 1rem;
+        position: absolute;
+        top: 75rem;
+        left: 7.33rem;
+    }
+
+    .heroCard {
+        width: 100%;
+    }
+
+    .absolutecard {
+        width: 100%;
+    }
+
+    .needBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 8rem 15rem;
+        margin-left: 4rem;
+        margin-top: 10rem;
+    }
+
+    .videosample {
+        height: fit-content;
+        position: absolute;
+        top: 4rem;
+    }
+
+    .old {
+        display: none !important;
+    }
+
+    .arrow img {
+        width: 28rem;
+        position: absolute;
+        bottom: 28rem;
+        right: 6rem;
+    }
+
+    .new img {
+        width: 100%;
+        position: relative;
+        bottom: 1rem;
+        left: -8rem;
+    }
+
+    .websiteImg2 {
+        position: static;
+    }
+
+    .manimgBox {
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: -10rem;
+        right: 0rem;
+    }
+
+    .icon {
+        margin-top: 22rem;
+    }
+
+    .companies .heading_03 {
+        text-align: center;
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .heading_03 {
+        text-align: center;
+        font-size: 2.6rem;
+        white-space: nowrap;
+    }
+
+    .websiteCard p {
+        text-align: center;
+    }
+
+    .footerBody {
+        padding: 3rem 3rem;
+    }
+
+    .list-unstyled a {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+
+    .btn {
+        margin-top: 2rem;
+        padding: 1rem 4rem;
+    }
+
+    .smallCard {
+        display: none !important;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 12rem 15rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .websiteImg2 {
+        position: static !important;
+    }
+
+    .herodiv {
+        padding: 48rem 40rem;
+        position: relative;
+        left: -4rem;
+    }
+
+    .jumbotron {
+        width: 95%;
+        padding: 6rem 1rem 18rem 2rem;
+        position: absolute;
+        top: 6rem;
+    }
+
+    .bars {
+        position: absolute;
+        top: -4rem;
+        left: -1.6rem;
+    }
+
+    .heroCardBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0rem;
+        padding: 0rem 1rem;
+        position: absolute;
+        top: 65rem;
+        left: 2rem;
+    }
+
+    .heroCard {
+        width: 100%;
+    }
+
+    .absolutecard {
+        width: 100%;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 8rem 18rem;
+        margin-left: 3rem;
+        margin-top: 8rem;
+    }
+
+    .videosample {
+        height: fit-content;
+        position: absolute;
+        top: 4rem;
+    }
+
+    .needBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .old img {
+        width: 45rem;
+        height: 35rem;
+    }
+
+    .arrow img {
+        width: 15rem;
+        position: absolute;
+        bottom: 23rem;
+        right: 4rem;
+    }
+
+    .new img {
+        width: 20rem;
+        position: absolute;
+        bottom: 7rem;
+        right: 7rem;
+    }
+
+    .websiteImg2 {
+        position: static;
+    }
+
+    .manimgBox {
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: -10rem;
+        right: 0rem;
+    }
+
+    .icon {
+        margin-top: 34rem;
+    }
+
+    .companies .heading_03 {
+        text-align: center;
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .heading_03 {
+        text-align: center;
+        font-size: 2.6rem;
+        white-space: nowrap;
+    }
+
+    .websiteCard p {
+        text-align: center;
+    }
+
+    .footerBody {
+        padding: 3rem 3rem;
+    }
+
+    .footerBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerBlock .list-unstyled {
+        margin-bottom: 3rem;
+    }
+
+    .footer-icons-list {
+        padding: 0.7rem;
+    }
+
+    .list-unstyled a {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (width >=993px) and (width <=1200px) {
+    .smallCard {
+        height: fit-content;
+        position: absolute;
+        bottom: 16rem;
+        right: 2rem;
+        background-color: #376DC9;
+        padding: 1.5rem;
+    }
+
+    .herodiv {
+        background: linear-gradient(to top, #b23c8a, #306ed5);
+        padding: 40rem 30rem;
+        position: relative;
+        left: -30rem;
+    }
+
+    .heroCardBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0rem;
+        padding: 0rem 1rem;
+    }
+
+    .jumbotron {
+        background-color: #0f2557ed;
+        width: 90%;
+        padding: 6rem 6rem 15rem 3rem;
+        position: absolute;
+        top: 8rem;
+        right: 10rem;
+    }
+
+    .bars {
+        width: 25rem;
+        position: absolute;
+        top: -4rem;
+        left: -1rem;
+    }
+
+    .heroCardBody {
+        position: absolute;
+        bottom: -24rem;
+        left: 10rem;
+    }
+
+    .bgBody {
+        background-color: #4778CA;
+        padding: 22rem 35rem;
+        margin-left: 10rem;
+        margin-top: 6rem;
+    }
+
+    .list-unstyled a {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width >=1200px) {
+    .heroCardBody {
+        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 0rem 1rem;
+        position: absolute;
+        top: 50rem;
+        left: 10rem;
+    }
+}
